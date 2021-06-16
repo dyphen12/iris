@@ -244,7 +244,7 @@ class DisplayPictureScreen extends StatelessWidget {
 
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Display the Picture')),
+      appBar: AppBar(title: const Text('Analysis Results')),
       // The image is stored as a file on the device. Use the `Image.file`
       // constructor with the given path to display the image.
       body: Center(
@@ -291,7 +291,22 @@ class DisplayPictureScreen extends StatelessWidget {
 
                       Tflite.close();
 
-                      return Text('Result: ${snapshot.data}'); }
+                      var x = snapshot.data;
+
+                      List<String> resulta = [];
+
+                      for (var y in x) {
+                        resulta.add(y['detectedClass']);
+
+                      }
+
+                      String geek2 = resulta.join(", ");
+
+                      //print(x.runtimeType);
+
+                      //print(x[0].runtimeType);
+
+                      return Text('\n\nResult: ${geek2.toString()}');}
                 }
               },
             ),
