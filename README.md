@@ -1,4 +1,6 @@
-﻿# Iris
+﻿<img src="https://raw.githubusercontent.com/prismasys/web-page/main/img/iris.png"  alt="Girl in a jacket"  width="350"  height="350">
+
+# Iris
 
 An object detection app, with a nice logo tho.
 
